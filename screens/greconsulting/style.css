@@ -1764,4 +1764,53 @@ body {
     .steps-grid {
         grid-template-columns: 1fr;
     }
+
+    /* Mobile Overflow Fixes */
+    .logo-area .logo {
+        height: auto;
+        max-height: 40px;
+        /* Reduce logo height/width */
+        max-width: 160px;
+    }
+
+    .header-container {
+        padding: 0 1rem;
+        /* Reduce header padding */
+        gap: 0.5rem;
+        /* Reduce gap */
+    }
+
+    .hero-form-wrapper,
+    .contact-form-wrapper {
+        padding: 1.5rem;
+        /* Reduce form padding to prevent overflow */
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    .hero-container {
+        padding-left: 1rem;
+        padding-right: 1rem;
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    .mobile-call-btn {
+        width: 36px;
+        height: 36px;
+    }
+
+    .mobile-call-btn i {
+        font-size: 1.2rem;
+    }
+
+    /* Ensure form inputs don't overflow */
+    .hero-contact-form input,
+    .contact-form input,
+    .contact-form textarea {
+        width: 100% !important;
+        max-width: 100% !important;
+        box-sizing: border-box !important;
+        min-width: 0;
+    }
 }

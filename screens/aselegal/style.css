@@ -1980,4 +1980,39 @@ body {
         text-align: justify;
         /* Optional: user didn't ask but usually looks better */
     }
+
+    /* Mobile Overflow Fixes (Header & Form) */
+    .header-container {
+        padding: 0 1rem;
+        gap: 0.5rem;
+    }
+
+    .logo-area .logo {
+        height: auto;
+        max-height: 45px;
+        max-width: 160px;
+    }
+
+    .hero-form-wrapper,
+    .contact-form-wrapper {
+        padding: 1.5rem;
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    .hero-container {
+        padding-left: 1rem;
+        padding-right: 1rem;
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    .hero-contact-form input,
+    .contact-form input,
+    .contact-form textarea {
+        width: 100% !important;
+        max-width: 100% !important;
+        box-sizing: border-box !important;
+        min-width: 0;
+    }
 }
