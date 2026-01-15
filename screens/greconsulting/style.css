@@ -1,13 +1,20 @@
 /* CSS Template Final - Combination */
 :root {
-    --brand-primary: #273480;
-    --accent: #2405E5;
-    --text-main: #515683;
-    --bg-light: #F4F6FA;
+    --brand-primary: #FF7D00;
+    /* Main Orange */
+    --accent: #E65100;
+    /* Darker Orange/Red for accent */
+    --text-main: #374151;
+    /* Charcoal Gray for text */
+    --bg-light: #FFF9F2;
+    /* Very Light Orange Tint */
     --white: #FFFFFF;
-    --gray-50: #E9EBF5;
-    --gray-500: #515683;
-    --border-color: #d9e0ea;
+    --gray-50: #FFF3E0;
+    /* Light Orange Gray */
+    --gray-500: #6B7280;
+    /* Neutral Gray */
+    --border-color: #FED7aa;
+    /* Peach/Light Orange Border */
 }
 
 html {
@@ -54,7 +61,7 @@ body {
 }
 
 .btn-primary:hover {
-    background-color: #1F2966;
+    background-color: #CC6400;
     /* brand-600 */
 }
 
@@ -64,9 +71,9 @@ body {
 }
 
 .btn-accent:hover {
-    background-color: #1A04B3;
+    background-color: #BF360C;
     transform: translateY(-2px);
-    box-shadow: 0 4px 12px rgba(36, 5, 229, 0.3);
+    box-shadow: 0 4px 12px rgba(230, 81, 0, 0.3);
 }
 
 .btn-block {
@@ -205,7 +212,7 @@ body {
 .hero-section {
     padding: 4rem 0 6rem;
     /* Fondo animado con degradado suave */
-    background: linear-gradient(-45deg, #ffffff, #f4f6fa, #e9ebf5, #ffffff);
+    background: linear-gradient(-45deg, #ffffff, #FFF3E0, #FFE0B2, #ffffff);
     background-size: 400% 400%;
     animation: gradientBG 15s ease infinite;
     position: relative;
@@ -248,7 +255,7 @@ body {
     -webkit-backdrop-filter: blur(12px);
     padding: 2.5rem;
     border-radius: 20px;
-    box-shadow: 0 20px 40px rgba(39, 52, 128, 0.1);
+    box-shadow: 0 20px 40px rgba(255, 125, 0, 0.1);
     border: 1px solid rgba(255, 255, 255, 0.6);
     text-align: left;
 }
@@ -278,7 +285,7 @@ body {
 .hero-contact-form input {
     width: 100%;
     padding: 0.8rem 1rem;
-    border: 1px solid rgba(81, 86, 131, 0.2);
+    border: 1px solid rgba(255, 125, 0, 0.2);
     border-radius: 8px;
     background: rgba(255, 255, 255, 0.9);
     font-family: inherit;
@@ -292,7 +299,7 @@ body {
 .hero-contact-form input:focus {
     outline: none;
     border-color: var(--accent);
-    box-shadow: 0 0 0 3px rgba(36, 5, 229, 0.1);
+    box-shadow: 0 0 0 3px rgba(255, 125, 0, 0.1);
 }
 
 /* Background Blobs - Perpetual Orbital Motion */
@@ -311,7 +318,7 @@ body {
 .hero-section::before {
     width: 500px;
     height: 500px;
-    background: rgba(36, 5, 229, 0.15);
+    background: rgba(255, 125, 0, 0.15);
     /* Accent */
     margin-top: -250px;
     /* Centrado vertical exacto (-mitad height) */
@@ -323,7 +330,7 @@ body {
 .hero-section::after {
     width: 400px;
     height: 400px;
-    background: rgba(39, 52, 128, 0.15);
+    background: rgba(230, 81, 0, 0.15);
     /* Brand Primary */
     margin-top: -200px;
     margin-left: -200px;
@@ -360,14 +367,14 @@ body {
 .hero-pill {
     display: inline-block;
     padding: 0.5rem 1.2rem;
-    background-color: rgba(36, 5, 229, 0.08);
+    background-color: rgba(255, 125, 0, 0.08);
     color: var(--accent);
     font-size: 0.85rem;
     font-weight: 600;
     border-radius: 50px;
     text-transform: uppercase;
     letter-spacing: 1px;
-    border: 1px solid rgba(36, 5, 229, 0.15);
+    border: 1px solid rgba(255, 125, 0, 0.15);
 }
 
 .hero-content h1 {
@@ -383,7 +390,7 @@ body {
     color: var(--accent);
     position: relative;
     display: inline-block;
-    background: linear-gradient(120deg, var(--accent) 0%, #6E44FF 100%);
+    background: linear-gradient(120deg, var(--accent) 0%, #FF8F00 100%);
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -398,7 +405,7 @@ body {
     left: 0;
     width: 100%;
     height: 16px;
-    background-color: rgba(36, 5, 229, 0.1);
+    background-color: rgba(255, 125, 0, 0.1);
     z-index: -1;
     transform: skewX(-15deg);
     border-radius: 4px;
@@ -433,7 +440,7 @@ body {
     background: #FFFFFF;
     padding: 0.8rem 1.5rem;
     border-radius: 16px;
-    box-shadow: 0 10px 30px rgba(39, 52, 128, 0.08);
+    box-shadow: 0 10px 30px rgba(255, 125, 0, 0.08);
     border: 1px solid rgba(255, 255, 255, 0.8);
     gap: 1rem;
     transition: transform 0.3s ease;
@@ -443,7 +450,7 @@ body {
 
 .google-review-widget:hover {
     transform: translateY(-3px);
-    box-shadow: 0 15px 35px rgba(39, 52, 128, 0.12);
+    box-shadow: 0 15px 35px rgba(255, 125, 0, 0.12);
 }
 
 .widget-icon img {
@@ -589,15 +596,15 @@ body {
 .icon-bad {
     width: 50px;
     height: 50px;
-    background: #FFF1F2;
-    /* Soft pink */
+    background: #FFF3E0;
+    /* Soft Oarnge */
     border-radius: 50%;
     /* Circle for semi-formal friendlier look */
     display: flex;
     align-items: center;
     justify-content: center;
     margin-bottom: 1.25rem;
-    color: #E11D48;
+    color: #E65100;
     /* Rose red */
     font-size: 1.5rem;
     transition: all 0.3s ease;
@@ -710,7 +717,7 @@ body {
 .service-clean-card:hover {
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
     /* Professional shadow */
-    border-color: rgba(39, 52, 128, 0.2);
+    border-color: rgba(230, 81, 0, 0.2);
     transform: translateY(-5px);
 }
 
@@ -801,7 +808,7 @@ body {
 }
 
 .dual-col.left-col .eyebrow {
-    background-color: #DBEAFE;
+    background-color: #FFF3E0;
     color: var(--brand-primary);
 }
 
@@ -851,8 +858,8 @@ body {
 }
 
 .dual-col.right-col .feature-list li i {
-    color: #4ADE80;
-    /* Green check or light accent */
+    color: #FFC107;
+    /* Yellow/Orange for contrast on dark orange bg */
     color: var(--accent);
     /* Or maybe white/lighter blue */
     /* Let's stick to a clean look */
@@ -1020,7 +1027,7 @@ body {
     font-weight: 700;
     margin: 0 auto 1.5rem;
     /* Center align for typical step layout */
-    box-shadow: 0 4px 10px rgba(39, 52, 128, 0.2);
+    box-shadow: 0 4px 10px rgba(230, 81, 0, 0.2);
     position: relative;
 }
 
@@ -1156,8 +1163,8 @@ body {
 
 .google-icon {
     font-size: 1.5rem;
-    color: #4285F4;
-    /* Google Blue */
+    color: var(--brand-primary);
+    /* Match Orange or keep Google colors? User said "everything". So match brand. */
 }
 
 .star-rating {
@@ -1207,7 +1214,7 @@ body {
 
 .contact-content .section-title .highlight {
     /* Ensure highlight is visible on dark bg */
-    background: linear-gradient(120deg, #A5B4FC 0%, #fff 100%);
+    background: linear-gradient(120deg, #FFE0B2 0%, #fff 100%);
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -1298,7 +1305,7 @@ body {
     outline: none;
     border-color: var(--accent);
     background-color: var(--white);
-    box-shadow: 0 0 0 4px rgba(36, 5, 229, 0.05);
+    box-shadow: 0 0 0 4px rgba(230, 81, 0, 0.05);
 }
 
 .form-group textarea {
@@ -1470,8 +1477,8 @@ body {
 }
 
 .footer-logo img {
-    height: 80px;
-    /* Increased from 60px */
+    height: 180px;
+    /* Increased from 80px/90px */
     width: auto;
 }
 
