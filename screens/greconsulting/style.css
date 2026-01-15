@@ -589,7 +589,7 @@ body {
     padding: 2rem 2rem 4rem 2rem;
     /* Increased bottom padding to prevent overlap */
     flex-grow: 1;
-    background: #f1f1fc;
+    background: #fff;
     position: relative;
 }
 
