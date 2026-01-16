@@ -1,20 +1,20 @@
 /* CSS Template Final - Combination */
 :root {
-    --brand-primary: #313079;
-    /* Deep Indigo */
-    --accent: #00A3FF;
-    /* Bright Sky Blue */
-    --text-main: #374151;
-    /* Charcoal Gray for text */
-    --bg-light: #F4F8FB;
-    /* Very Light Blue Tint */
+    --brand-primary: #85BB41;
+    /* Green FITECC */
+    --accent: #6FA22E;
+    /* Darker Green for accent FITECC */
+    --text-main: #747474;
+    /* Gray FITECC */
+    --bg-light: #F9FCF6;
+    /* Very Light Green Tint */
     --white: #FFFFFF;
-    --gray-50: #EEF2F6;
-    /* Light Blue Gray */
-    --gray-500: #6B7280;
-    /* Neutral Gray */
-    --border-color: #CFDCE8;
-    /* Blue Gray Border */
+    --gray-50: #F2F2F2;
+    /* Light Gray */
+    --gray-500: #747474;
+    /* Match Extra Gray */
+    --border-color: #E0E0E0;
+    /* Neutral Border */
 }
 
 html {
@@ -53,7 +53,8 @@ body {
 }
 
 .btn-primary {
-    background-color: var(--brand-primary);
+    background-color: #6A9635;
+    /* Darker Green for better visibility */
     color: var(--white);
     display: inline-flex;
     align-items: center;
@@ -61,8 +62,8 @@ body {
 }
 
 .btn-primary:hover {
-    background-color: #201F50;
-    /* brand-600 */
+    background-color: #557A2A;
+    /* Even darker Green hover */
 }
 
 .btn-accent {
@@ -71,9 +72,9 @@ body {
 }
 
 .btn-accent:hover {
-    background-color: #0082CC;
+    background-color: #5E852D;
     transform: translateY(-2px);
-    box-shadow: 0 4px 12px rgba(0, 163, 255, 0.3);
+    box-shadow: 0 4px 12px rgba(133, 187, 65, 0.4);
 }
 
 .btn-block {
@@ -82,7 +83,13 @@ body {
 }
 
 .highlight {
-    color: var(--brand-primary);
+    background: linear-gradient(120deg, #85BB41 0%, #386617 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    display: inline-block;
+    /* Ensure gradient works */
+    font-weight: 700;
 }
 
 .section-title {
@@ -90,7 +97,8 @@ body {
     font-weight: 700;
     margin-bottom: 1rem;
     line-height: 1.2;
-    color: var(--brand-primary);
+    color: #386617;
+    /* Much darker green for titles */
     text-align: center;
 }
 
@@ -212,7 +220,7 @@ body {
 .hero-section {
     padding: 4rem 0 6rem;
     /* Fondo animado con degradado suave */
-    background: linear-gradient(-45deg, #ffffff, #EEF2F6, #D1E9FF, #ffffff);
+    background: linear-gradient(-45deg, #F9FCF6, #ffffff, #F9FCF6, #E8F5E0, #ffffff);
     background-size: 400% 400%;
     animation: gradientBG 15s ease infinite;
     position: relative;
@@ -255,7 +263,7 @@ body {
     -webkit-backdrop-filter: blur(12px);
     padding: 2.5rem;
     border-radius: 20px;
-    box-shadow: 0 20px 40px rgba(49, 48, 121, 0.1);
+    box-shadow: 0 20px 40px rgba(133, 187, 65, 0.1);
     border: 1px solid rgba(255, 255, 255, 0.6);
     text-align: left;
 }
@@ -285,7 +293,7 @@ body {
 .hero-contact-form input {
     width: 100%;
     padding: 0.8rem 1rem;
-    border: 1px solid rgba(49, 48, 121, 0.2);
+    border: 1px solid rgba(133, 187, 65, 0.2);
     border-radius: 8px;
     background: rgba(255, 255, 255, 0.9);
     font-family: inherit;
@@ -299,7 +307,7 @@ body {
 .hero-contact-form input:focus {
     outline: none;
     border-color: var(--accent);
-    box-shadow: 0 0 0 3px rgba(49, 48, 121, 0.1);
+    box-shadow: 0 0 0 3px rgba(133, 187, 65, 0.15);
 }
 
 /* Background Blobs - Perpetual Orbital Motion */
@@ -318,7 +326,7 @@ body {
 .hero-section::before {
     width: 500px;
     height: 500px;
-    background: rgba(0, 163, 255, 0.15);
+    background: rgba(133, 187, 65, 0.15);
     /* Accent */
     margin-top: -250px;
     /* Centrado vertical exacto (-mitad height) */
@@ -330,8 +338,8 @@ body {
 .hero-section::after {
     width: 400px;
     height: 400px;
-    background: rgba(49, 48, 121, 0.15);
-    /* Brand Primary */
+    background: rgba(116, 116, 116, 0.1);
+    /* Brand Primary / Gray */
     margin-top: -200px;
     margin-left: -200px;
     animation: orbitCounterClockwise 35s linear infinite;
@@ -367,30 +375,31 @@ body {
 .hero-pill {
     display: inline-block;
     padding: 0.5rem 1.2rem;
-    background-color: rgba(49, 48, 121, 0.08);
-    color: var(--accent);
+    background-color: rgba(133, 187, 65, 0.1);
+    color: var(--brand-primary);
     font-size: 0.85rem;
     font-weight: 600;
     border-radius: 50px;
     text-transform: uppercase;
     letter-spacing: 1px;
-    border: 1px solid rgba(49, 48, 121, 0.15);
+    border: 1px solid rgba(133, 187, 65, 0.2);
 }
 
 .hero-content h1 {
     font-size: 4rem;
     /* Más grande para compensar el espacio vacío */
     line-height: 1.1;
-    color: var(--brand-primary);
+    color: #386617;
+    /* Darker Green */
     margin-bottom: 2rem;
     letter-spacing: -1.5px;
 }
 
 .hero-content .highlight {
-    color: var(--accent);
+    color: var(--brand-primary);
     position: relative;
     display: inline-block;
-    background: linear-gradient(120deg, var(--accent) 0%, #313079 100%);
+    background: linear-gradient(120deg, #85BB41 0%, #386617 100%);
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -405,7 +414,7 @@ body {
     left: 0;
     width: 100%;
     height: 16px;
-    background-color: rgba(49, 48, 121, 0.1);
+    background-color: rgba(133, 187, 65, 0.15);
     z-index: -1;
     transform: skewX(-15deg);
     border-radius: 4px;
@@ -440,7 +449,7 @@ body {
     background: #FFFFFF;
     padding: 0.8rem 1.5rem;
     border-radius: 16px;
-    box-shadow: 0 10px 30px rgba(49, 48, 121, 0.08);
+    box-shadow: 0 10px 30px rgba(133, 187, 65, 0.08);
     border: 1px solid rgba(255, 255, 255, 0.8);
     gap: 1rem;
     transition: transform 0.3s ease;
@@ -450,7 +459,7 @@ body {
 
 .google-review-widget:hover {
     transform: translateY(-3px);
-    box-shadow: 0 15px 35px rgba(49, 48, 121, 0.12);
+    box-shadow: 0 15px 35px rgba(133, 187, 65, 0.15);
 }
 
 .widget-icon img {
@@ -494,7 +503,8 @@ body {
 
 /* Footer (Based on Light A / B refined) */
 .main-footer {
-    background-color: var(--brand-primary);
+    background-color: #26490e;
+    /* Dark Green Footer */
     color: var(--white);
     padding: 2rem 0 1rem;
     position: relative;
@@ -596,16 +606,16 @@ body {
 .icon-bad {
     width: 50px;
     height: 50px;
-    background: #EEF2F6;
-    /* Soft Blue */
+    background: #F9FCF6;
+    /* Soft Green */
     border-radius: 50%;
     /* Circle for semi-formal friendlier look */
     display: flex;
     align-items: center;
     justify-content: center;
     margin-bottom: 1.25rem;
-    color: var(--accent);
-    /* Rose red */
+    color: var(--text-main);
+    /* Gray */
     font-size: 1.5rem;
     transition: all 0.3s ease;
 }
@@ -617,7 +627,7 @@ body {
 
 .problem-block h3 {
     font-size: 1.2rem;
-    color: var(--brand-primary);
+    color: #386617;
     margin-bottom: 0.75rem;
     line-height: 1.4;
     font-weight: 700;
@@ -717,14 +727,14 @@ body {
 .service-clean-card:hover {
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
     /* Professional shadow */
-    border-color: rgba(0, 163, 255, 0.2);
+    border-color: rgba(133, 187, 65, 0.2);
     transform: translateY(-5px);
 }
 
 .service-clean-icon {
     width: 60px;
     height: 60px;
-    background-color: #F4F6FA;
+    background-color: #F9FCF6;
     color: var(--brand-primary);
     border-radius: 8px;
     display: flex;
@@ -749,7 +759,7 @@ body {
 .service-clean-content h3 {
     font-size: 1.25rem;
     font-weight: 600;
-    color: var(--brand-primary);
+    color: #386617;
     margin-bottom: 0.75rem;
 }
 
@@ -953,7 +963,7 @@ body {
 
 .steps-intro h2 {
     font-size: 2.5rem;
-    color: var(--brand-primary);
+    color: #386617;
     margin-bottom: 0.5rem;
     /* Reduced margin bottom */
     margin-top: 0;
@@ -1337,7 +1347,7 @@ body {
 
 .location-title {
     font-size: 2rem;
-    color: var(--brand-primary);
+    color: #386617;
     margin-bottom: 2rem;
 }
 
@@ -1454,7 +1464,7 @@ body {
 
 /* Footer (Template A Structure) */
 .main-footer {
-    background-color: var(--brand-primary);
+    background-color: #26490e;
     color: var(--white);
     padding: 2rem 0 1rem;
     /* Reduced padding */
