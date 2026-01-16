@@ -1,20 +1,20 @@
 /* CSS Template Final - Combination */
 :root {
-    --brand-primary: #313079;
-    /* Deep Indigo */
-    --accent: #00A3FF;
-    /* Bright Sky Blue */
+    --brand-primary: #F39200;
+    /* Orange Joan Lluis Vives */
+    --accent: #D68100;
+    /* Darker Orange for accent/hover */
     --text-main: #374151;
     /* Charcoal Gray for text */
-    --bg-light: #F4F8FB;
-    /* Very Light Blue Tint */
+    --bg-light: #FFF8F0;
+    /* Very Light Orange Tint */
     --white: #FFFFFF;
-    --gray-50: #EEF2F6;
-    /* Light Blue Gray */
+    --gray-50: #FAFAF9;
+    /* Warm Gray */
     --gray-500: #6B7280;
     /* Neutral Gray */
-    --border-color: #CFDCE8;
-    /* Blue Gray Border */
+    --border-color: #FFE0B2;
+    /* Light Orange Border */
 }
 
 html {
@@ -61,8 +61,8 @@ body {
 }
 
 .btn-primary:hover {
-    background-color: #201F50;
-    /* brand-600 */
+    background-color: #D68100;
+    /* Darker Orange */
 }
 
 .btn-accent {
@@ -71,9 +71,9 @@ body {
 }
 
 .btn-accent:hover {
-    background-color: #0082CC;
+    background-color: #B86E00;
     transform: translateY(-2px);
-    box-shadow: 0 4px 12px rgba(0, 163, 255, 0.3);
+    box-shadow: 0 4px 12px rgba(243, 146, 0, 0.3);
 }
 
 .btn-block {
@@ -212,7 +212,7 @@ body {
 .hero-section {
     padding: 4rem 0 6rem;
     /* Fondo animado con degradado suave */
-    background: linear-gradient(-45deg, #ffffff, #EEF2F6, #D1E9FF, #ffffff);
+    background: linear-gradient(-45deg, #ffffff, #FFF8F0, #ffffff, #FFECD6, #ffffff);
     background-size: 400% 400%;
     animation: gradientBG 15s ease infinite;
     position: relative;
@@ -255,7 +255,7 @@ body {
     -webkit-backdrop-filter: blur(12px);
     padding: 2.5rem;
     border-radius: 20px;
-    box-shadow: 0 20px 40px rgba(49, 48, 121, 0.1);
+    box-shadow: 0 20px 40px rgba(243, 146, 0, 0.1);
     border: 1px solid rgba(255, 255, 255, 0.6);
     text-align: left;
 }
@@ -285,7 +285,7 @@ body {
 .hero-contact-form input {
     width: 100%;
     padding: 0.8rem 1rem;
-    border: 1px solid rgba(49, 48, 121, 0.2);
+    border: 1px solid rgba(243, 146, 0, 0.2);
     border-radius: 8px;
     background: rgba(255, 255, 255, 0.9);
     font-family: inherit;
@@ -299,7 +299,7 @@ body {
 .hero-contact-form input:focus {
     outline: none;
     border-color: var(--accent);
-    box-shadow: 0 0 0 3px rgba(49, 48, 121, 0.1);
+    box-shadow: 0 0 0 3px rgba(243, 146, 0, 0.1);
 }
 
 /* Background Blobs - Perpetual Orbital Motion */
@@ -318,8 +318,8 @@ body {
 .hero-section::before {
     width: 500px;
     height: 500px;
-    background: rgba(0, 163, 255, 0.15);
-    /* Accent */
+    background: rgba(243, 146, 0, 0.15);
+    /* Orange Tint */
     margin-top: -250px;
     /* Centrado vertical exacto (-mitad height) */
     margin-left: -250px;
@@ -330,8 +330,8 @@ body {
 .hero-section::after {
     width: 400px;
     height: 400px;
-    background: rgba(49, 48, 121, 0.15);
-    /* Brand Primary */
+    background: rgba(214, 129, 0, 0.15);
+    /* Darker Orange Tint */
     margin-top: -200px;
     margin-left: -200px;
     animation: orbitCounterClockwise 35s linear infinite;
@@ -367,14 +367,14 @@ body {
 .hero-pill {
     display: inline-block;
     padding: 0.5rem 1.2rem;
-    background-color: rgba(49, 48, 121, 0.08);
+    background-color: rgba(243, 146, 0, 0.08);
     color: var(--accent);
     font-size: 0.85rem;
     font-weight: 600;
     border-radius: 50px;
     text-transform: uppercase;
     letter-spacing: 1px;
-    border: 1px solid rgba(49, 48, 121, 0.15);
+    border: 1px solid rgba(243, 146, 0, 0.15);
 }
 
 .hero-content h1 {
@@ -390,7 +390,7 @@ body {
     color: var(--accent);
     position: relative;
     display: inline-block;
-    background: linear-gradient(120deg, var(--accent) 0%, #313079 100%);
+    background: linear-gradient(120deg, var(--brand-primary) 0%, var(--accent) 100%);
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -405,7 +405,7 @@ body {
     left: 0;
     width: 100%;
     height: 16px;
-    background-color: rgba(49, 48, 121, 0.1);
+    background-color: rgba(243, 146, 0, 0.1);
     z-index: -1;
     transform: skewX(-15deg);
     border-radius: 4px;
@@ -440,7 +440,7 @@ body {
     background: #FFFFFF;
     padding: 0.8rem 1.5rem;
     border-radius: 16px;
-    box-shadow: 0 10px 30px rgba(49, 48, 121, 0.08);
+    box-shadow: 0 10px 30px rgba(243, 146, 0, 0.08);
     border: 1px solid rgba(255, 255, 255, 0.8);
     gap: 1rem;
     transition: transform 0.3s ease;
@@ -450,7 +450,7 @@ body {
 
 .google-review-widget:hover {
     transform: translateY(-3px);
-    box-shadow: 0 15px 35px rgba(49, 48, 121, 0.12);
+    box-shadow: 0 15px 35px rgba(243, 146, 0, 0.12);
 }
 
 .widget-icon img {
@@ -494,7 +494,8 @@ body {
 
 /* Footer (Based on Light A / B refined) */
 .main-footer {
-    background-color: var(--brand-primary);
+    background-color: #331F00;
+    /* Almost Black Orange */
     color: var(--white);
     padding: 2rem 0 1rem;
     position: relative;
@@ -650,15 +651,16 @@ body {
 .approach-label {
     text-transform: uppercase;
     font-size: 0.7rem;
-    font-weight: 700;
+    font-size: 0.85rem;
+    font-weight: 600;
     letter-spacing: 1px;
     color: var(--brand-primary);
     margin-bottom: 0.5rem;
     background: #fff;
-    padding: 0.25rem 0.75rem;
+    padding: 0.35rem 0.8rem;
     border-radius: 20px;
     display: inline-block;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 10px rgba(243, 146, 0, 0.2);
 }
 
 .approach-block p {
@@ -717,7 +719,7 @@ body {
 .service-clean-card:hover {
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
     /* Professional shadow */
-    border-color: rgba(0, 163, 255, 0.2);
+    border-color: rgba(243, 146, 0, 0.2);
     transform: translateY(-5px);
 }
 
@@ -1027,7 +1029,7 @@ body {
     font-weight: 700;
     margin: 0 auto 1.5rem;
     /* Center align for typical step layout */
-    box-shadow: 0 4px 10px rgba(49, 48, 121, 0.2);
+    box-shadow: 0 4px 10px rgba(243, 146, 0, 0.2);
     position: relative;
 }
 
@@ -1305,7 +1307,7 @@ body {
     outline: none;
     border-color: var(--accent);
     background-color: var(--white);
-    box-shadow: 0 0 0 4px rgba(0, 163, 255, 0.05);
+    box-shadow: 0 0 0 4px rgba(243, 146, 0, 0.05);
 }
 
 .form-group textarea {
@@ -1454,7 +1456,7 @@ body {
 
 /* Footer (Template A Structure) */
 .main-footer {
-    background-color: var(--brand-primary);
+    background-color: #331F00;
     color: var(--white);
     padding: 2rem 0 1rem;
     /* Reduced padding */
