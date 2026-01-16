@@ -1,20 +1,18 @@
 /* CSS Template Final - Combination */
 :root {
-    --brand-primary: #0080B5;
-    /* Primary Cyan/Blue */
-    --accent: #041C4B;
-    /* Secondary Navy Blue */
+    --brand-primary: #00385C;
+    /* Primary Dark Blue */
+    --brand-secondary: #C25155;
+    /* Secondary Red/Rose */
+    --accent: #1D70EB;
+    /* Accent Bright Blue */
     --text-main: #334155;
-    /* Slate 700 */
-    --bg-light: #F0F9FF;
-    /* Sky 50 */
+    --bg-light: #F1F5F9;
+    /* Slate 50 */
     --white: #FFFFFF;
-    --gray-50: #E0F2FE;
-    /* Sky 100 */
+    --gray-50: #F8FAFC;
     --gray-500: #64748B;
-    /* Slate 500 */
-    --border-color: #BAE6FD;
-    /* Sky 200 */
+    --border-color: #E2E8F0;
 }
 
 html {
@@ -61,20 +59,20 @@ body {
 }
 
 .btn-primary:hover {
-    background-color: #02122F;
-    /* Darker Primary */
+    background-color: #104FB8;
+    /* Darker Accent */
 }
 
 .btn-accent {
-    background-color: var(--accent);
+    background-color: var(--brand-secondary);
     color: var(--white);
 }
 
 .btn-accent:hover {
-    background-color: #02122F;
+    background-color: #A03539;
     /* Darker Secondary */
     transform: translateY(-2px);
-    box-shadow: 0 4px 12px rgba(4, 28, 75, 0.3);
+    box-shadow: 0 4px 12px rgba(194, 81, 85, 0.3);
 }
 
 .btn-block {
@@ -83,7 +81,7 @@ body {
 }
 
 .highlight {
-    color: var(--brand-primary);
+    color: var(--brand-secondary);
 }
 
 .section-title {
@@ -213,7 +211,7 @@ body {
 .hero-section {
     padding: 4rem 0 6rem;
     /* Fondo animado con degradado suave */
-    background: linear-gradient(-45deg, #E0F2FE, #ffffff, #BAE6FD, #ffffff);
+    background: linear-gradient(-45deg, #F1F5F9, #ffffff, #EBF4FF, #ffffff);
     background-size: 400% 400%;
     animation: gradientBG 15s ease infinite;
     position: relative;
@@ -261,7 +259,7 @@ body {
     -webkit-backdrop-filter: blur(12px);
     padding: 2.5rem;
     border-radius: 20px;
-    box-shadow: 0 20px 40px rgba(0, 128, 181, 0.1);
+    box-shadow: 0 20px 40px rgba(29, 112, 235, 0.1);
     border: 1px solid rgba(255, 255, 255, 0.6);
     text-align: left;
 }
@@ -291,7 +289,7 @@ body {
 .hero-contact-form input {
     width: 100%;
     padding: 0.8rem 1rem;
-    border: 1px solid rgba(0, 128, 181, 0.2);
+    border: 1px solid rgba(29, 112, 235, 0.2);
     border-radius: 8px;
     background: rgba(255, 255, 255, 0.9);
     font-family: inherit;
@@ -305,7 +303,7 @@ body {
 .hero-contact-form input:focus {
     outline: none;
     border-color: var(--accent);
-    box-shadow: 0 0 0 3px rgba(0, 128, 181, 0.1);
+    box-shadow: 0 0 0 3px rgba(29, 112, 235, 0.1);
 }
 
 /* Background Blobs - Perpetual Orbital Motion */
@@ -324,7 +322,7 @@ body {
 .hero-section::before {
     width: 500px;
     height: 500px;
-    background: rgba(0, 128, 181, 0.15);
+    background: rgba(29, 112, 235, 0.15);
     /* Accent */
     margin-top: -250px;
     /* Centrado vertical exacto (-mitad height) */
@@ -336,7 +334,7 @@ body {
 .hero-section::after {
     width: 400px;
     height: 400px;
-    background: rgba(0, 128, 181, 0.15);
+    background: rgba(0, 56, 92, 0.15);
     /* Brand Primary */
     margin-top: -200px;
     margin-left: -200px;
@@ -373,7 +371,7 @@ body {
 .hero-pill {
     display: inline-block;
     padding: 0.5rem 1.2rem;
-    background-color: rgba(0, 128, 181, 0.08);
+    background-color: rgba(29, 112, 235, 0.08);
     color: var(--accent);
     font-size: 0.85rem;
     font-weight: 600;
@@ -381,7 +379,7 @@ body {
     text-transform: uppercase;
     letter-spacing: 1px;
     border: none;
-    border: 1px solid rgba(0, 66, 96, 0.39);
+    border: 1px solid rgba(0, 56, 92, 0.39);
 }
 
 .hero-content h1 {
@@ -397,7 +395,7 @@ body {
     color: var(--accent);
     position: relative;
     display: inline-block;
-    background: linear-gradient(120deg, var(--brand-primary) 0%, var(--accent) 100%);
+    background: linear-gradient(120deg, var(--accent) 0%, var(--brand-secondary) 100%);
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -475,7 +473,7 @@ body {
     background: var(--white);
     border-color: var(--white);
     transform: translate(-50%, -50%) scale(1.1);
-    box-shadow: 0 10px 40px rgba(0, 128, 181, 0.4);
+    box-shadow: 0 10px 40px rgba(29, 112, 235, 0.4);
 }
 
 /* Subrayado creativo para el highlight */
@@ -486,7 +484,7 @@ body {
     left: 0;
     width: 100%;
     height: 16px;
-    background-color: rgba(0, 128, 181, 0.1);
+    background-color: rgba(194, 81, 85, 0.15);
     z-index: -1;
     transform: skewX(-15deg);
     border-radius: 4px;
@@ -521,7 +519,7 @@ body {
     background: #FFFFFF;
     padding: 0.8rem 1.5rem;
     border-radius: 16px;
-    box-shadow: 0 10px 30px rgba(0, 128, 181, 0.08);
+    box-shadow: 0 10px 30px rgba(29, 112, 235, 0.08);
     border: 1px solid rgba(255, 255, 255, 0.8);
     gap: 1rem;
     transition: transform 0.3s ease;
@@ -531,7 +529,7 @@ body {
 
 .google-review-widget:hover {
     transform: translateY(-3px);
-    box-shadow: 0 15px 35px rgba(0, 128, 181, 0.12);
+    box-shadow: 0 15px 35px rgba(29, 112, 235, 0.12);
 }
 
 .widget-icon img {
@@ -677,16 +675,16 @@ body {
 .icon-bad {
     width: 50px;
     height: 50px;
-    background: #FFF3E0;
-    /* Soft Oarnge */
+    background: #FEF2F2;
+    /* Soft Red */
     border-radius: 50%;
     /* Circle for semi-formal friendlier look */
     display: flex;
     align-items: center;
     justify-content: center;
     margin-bottom: 1.25rem;
-    color: #E65100;
-    /* Rose red */
+    color: var(--brand-secondary);
+    /* Red */
     font-size: 1.5rem;
     transition: all 0.3s ease;
 }
@@ -798,7 +796,7 @@ body {
 .service-clean-card:hover {
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
     /* Professional shadow */
-    border-color: rgba(0, 128, 181, 0.2);
+    border-color: rgba(29, 112, 235, 0.2);
     transform: translateY(-5px);
 }
 
@@ -908,7 +906,7 @@ body {
 
 /* Right Column: Dark/Primary Style */
 .dual-col.right-col {
-    background-color: var(--accent);
+    background-color: var(--brand-primary);
     color: var(--white);
 }
 
@@ -1108,7 +1106,7 @@ body {
     font-weight: 700;
     margin: 0 auto 1.5rem;
     /* Center align for typical step layout */
-    box-shadow: 0 4px 10px rgba(0, 128, 181, 0.2);
+    box-shadow: 0 4px 10px rgba(29, 112, 235, 0.2);
     position: relative;
 }
 
@@ -1386,7 +1384,7 @@ body {
     outline: none;
     border-color: var(--accent);
     background-color: var(--white);
-    box-shadow: 0 0 0 4px rgba(0, 128, 181, 0.05);
+    box-shadow: 0 0 0 4px rgba(29, 112, 235, 0.05);
 }
 
 .form-group textarea {
@@ -1508,12 +1506,12 @@ body {
 
 .faq-question i {
     font-size: 1.5rem;
-    color: var(--accent);
+    color: var(--brand-secondary);
     transition: transform 0.3s ease;
 }
 
 .faq-item.active .faq-question h3 {
-    color: var(--accent);
+    color: var(--brand-secondary);
 }
 
 .faq-item.active .faq-question i {
@@ -1919,7 +1917,7 @@ body {
 .step-pill:hover {
     border-color: var(--brand-primary);
     transform: translateX(5px);
-    box-shadow: 0 4px 15px rgba(0, 128, 181, 0.1);
+    box-shadow: 0 4px 15px rgba(29, 112, 235, 0.1);
 }
 
 .step-pill .num {
